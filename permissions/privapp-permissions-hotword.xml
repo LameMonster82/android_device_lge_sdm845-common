@@ -7,4 +7,5 @@
     <privapp-permissions package="com.android.hotwordenrollment.xgoogle">
         <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
     </privapp-permissions>
+
 </permissions>

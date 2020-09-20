@@ -243,7 +243,8 @@ PRODUCT_PACKAGES += \
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/product_privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+    $(LOCAL_PATH)/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
+    $(LOCAL_PATH)/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-hotword.xml
 
 # Init
 PRODUCT_COPY_FILES += \
@@ -355,6 +356,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 PRODUCT_COPY_FILES += \
+    frameworks/base/data/etc/privapp-permissions-platform.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-platform.xml \
+    frameworks/base/data/etc/privapp-permissions-platform.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-platform.xml \
     $(COMMON_PATH)/permissions/privapp-permissions-lge_sdm845.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-lge_sdm845.xml
 
 # Power
